@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- font awesome file link-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
@@ -162,6 +163,7 @@
         /* Section animations */
         section {
             animation: fadeInUp 1s ease-out;
+            width: 100%;
         }
 
         /* Staggered animations for list items */
@@ -676,6 +678,9 @@
             font-size: 62.5%;
             overflow-x: hidden;
         }
+        .section {
+            width: 100%;
+       }
 
         .heading {
             margin: 2rem;
@@ -686,6 +691,11 @@
             color: var(--green);
             position: relative;
             letter-spacing: .2rem;
+        }
+        .img {
+             max-width: 100%;
+             height: auto;
+             display: block;
         }
 
         .btn {
@@ -1141,8 +1151,10 @@
             font-family: Arial, sans-serif;
             background-color: #b4c4cd;
             margin: 0;
-            padding: 20px;
-            box-sizing: border-box; max-width: 100%;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+            
         }
 
         .faq-container {
@@ -1431,6 +1443,7 @@
 
 
 </html>
+
 
 
 
